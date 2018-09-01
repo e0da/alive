@@ -1,5 +1,4 @@
-alive
-=====
+# alive
 
 The very latest in a long list of alphabetically named simulations that I'm
 writing to teach and entertain myself. Goals:
@@ -28,9 +27,20 @@ writing to teach and entertain myself. Goals:
 8. Save and load state. Should be stupid dumb dead simple because Redux.
 9. Import/export brains specificially
 
+## Style and consistency
+
+I'm using ESLint and a bunch of plugins including Prettier to enforce style so
+that I don't have to think about it. I'm going to avoid customizing things, and
+I'll document the rules I do customize here:
+
+- react/jsx-filename-extension: I'm very convinced by [this argument][dot-jsx],
+  i.e. we don't add file extensions for embedding Flow or other transforms, why
+  for JSX? It's not special.
+
 [Private Trello board](https://trello.com/b/0jrUP8ck/alive)
 
-License and Copyright
----------------------
+## License and Copyright
 
 Copyright Justin Force. Licensed under the ISC License.
+
+[dot-jsx]:https://github.com/facebook/create-react-app/issues/87#issuecomment-234627904
