@@ -27,6 +27,14 @@ writing to teach and entertain myself. Goals:
 8. Save and load state. Should be stupid dumb dead simple because Redux.
 9. Import/export brains specificially
 
+## Getting started
+
+```sh
+yarn run
+```
+
+to get a list of commands. Go from there.
+
 ## Style and consistency
 
 I'm using ESLint and a bunch of plugins including Prettier to enforce style so
