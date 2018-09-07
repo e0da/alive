@@ -1,0 +1,4 @@
+{
+  "excludeGlob": ["src/**/*.test.js"],
+  "includeGlob": ["src/**/*.js"]
+}

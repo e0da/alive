@@ -4,5 +4,51 @@
   "repository": "https://github.com/justinforce/alive",
   "author": "Justin Force <justin.force@gmail.com>",
   "license": "ISC",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-dynamic-import-webpack": "^1.0.2",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "flow-bin": "^0.80.0",
+    "flow-coverage-report": "^0.6.0",
+    "flow-typed": "^2.5.1",
+    "jest": "^23.5.0",
+    "prettier": "^1.14.2",
+    "regenerator-runtime": "^0.12.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server",
+    "lint": "eslint src/**/*.js",
+    "flow": "flow check",
+    "flow-coverage": "flow-coverage-report --config .flowcoverage.json",
+    "flow-coverage-html": "flow-coverage-report --config .flowcoverage.json -t html",
+    "flow-typed": "flow-typed install",
+    "build": "webpack",
+    "check": "yarn flow-typed && yarn lint && yarn flow && yarn test && yarn build"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  }
 }

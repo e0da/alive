@@ -1,0 +1,15 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": "> 10%"
+        }
+      }
+    ],
+    "@babel/flow",
+    "@babel/react"
+  ],
+  "plugins": ["dynamic-import-webpack"]
+}
