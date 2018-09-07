@@ -1,0 +1,8 @@
+{
+  "name": "alive",
+  "version": "1.0.0",
+  "repository": "https://github.com/justinforce/alive",
+  "author": "Justin Force <justin.force@gmail.com>",
+  "license": "ISC",
+  "private": true
+}
